@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--针对移动端的viewport通用设置-->
+    <meta name="viewport"
+          content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+    <title>管理开票资料</title>
+    <style TYPE="text/css">
+        html {
+            font: 10px Lucida Grande, 'Microsoft YaHei', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+        }
+        body{
+            color:#555;
+        }
+        .manageAddress {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .manageAddress label{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        footer {
+            display: flex;
+            flex: 0 0 5rem;
+            border-top: 1px solid #E4E3E4;
+        }
+        header{
+            display: flex;
+            flex: 0 0 4rem;
+            border-bottom: 1px solid #E4E3E4;
+            color: #555;
+        }
+        .manageAddress-body{
+            flex: 1;
+            padding-top: 1rem;
+        }
+        .header-img {
+            height: 2rem;
+            margin-top: 1rem ;
+            max-width: 100%;
+        }
+        .header-content {
+            margin: 0 auto;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 4rem;
+        }
+
+        .manageAddress-footer-btn{
+            height: 4rem;
+            border: none;
+            background-color: #FBB935;
+            font-size: 1.7rem;
+            color: #fff;
+            width: 100%;
+        }
+
+        .manageAddress-select{
+            display: flex;
+            font-size: 1.5rem;
+            align-items: center;
+            margin: .5rem 0;
+        }
+        .manageAddress-select-body{
+            flex: 1;
+            margin: 0 1rem;
+        }
+        .manageAddress-btns{
+            padding-bottom: .5rem;
+            font-size: 1.3rem;
+            display: flex;
+            border-bottom: 2px solid #E4E3E4;
+        }
+        .manageAddress-btns span{
+           vertical-align: top;
+        }
+        .manageAddress-btns-2{
+            flex: 0 0 70%;
+        }
+        .manageAddress-btns-1{
+            flex: 1;
+        }
+        .manageAddress-icon{
+            width: 1.5rem;
+            height: 1.5rem;
+            max-width: 100%;
+            display: inline-block;
+        }
+        form div{
+            padding: .2rem;
+        }
+    </style>
+</head>
+<body class="manageAddress">
+<header>
+    <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+    <span class="header-content">管理开票资料</span>
+</header>
+<div class="manageAddress-body">
+    <form>
+        <div class="manageAddress-select">
+            <div class="manageAddress-select-body" style="display: inline-block">
+                <div>
+                    <span>开票资料：普通票</span>
+                </div>
+                <div>
+                    <span>公司名称：中国移动研发中心</span>
+                </div>
+                <div>
+                    <span>公司地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
+                </div>
+                <div>
+                    <span>联系电话：0512-88888888</span>
+                </div>
+                <div>
+                    <span>开户银行：招商银行(苏州新区支行)</span>
+                </div>
+                <div>
+                    <span>银行帐号：6217002710000688888</span>
+                </div>
+            </div>
+        </div>
+        <div class="manageAddress-btns">
+            <div class="manageAddress-btns-2">
+                <span>
+                    <input type="radio" name="" id="" value=""/>设为默认
+                </span>
+            </div>
+            <div class="manageAddress-btns-1">
+                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
+                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+            </div>
+        </div>
+        <br>
+
+        <div class="manageAddress-select">
+            <div class="manageAddress-select-body" style="display: inline-block">
+                <div>
+                    <span>开票资料：普通票</span>
+                </div>
+                <div>
+                    <span>公司名称：中国移动研发中心</span>
+                </div>
+                <div>
+                    <span>公司地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
+                </div>
+                <div>
+                    <span>联系电话：0512-88888888</span>
+                </div>
+                <div>
+                    <span>开户银行：招商银行(苏州新区支行)</span>
+                </div>
+                <div>
+                    <span>银行帐号：6217002710000688888</span>
+                </div>
+            </div>
+        </div>
+        <div class="manageAddress-btns">
+            <div class="manageAddress-btns-2">
+                <span>
+                    <input type="radio" name="" id="" value=""/>设为默认
+                </span>
+            </div>
+            <div class="manageAddress-btns-1">
+                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
+                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+            </div>
+        </div>
+        <br>
+
+
+    </form>
+</div>
+<footer>
+    <button type="submit" class="manageAddress-footer-btn">添加开票资料</button>
+</footer>
+</body>
+</html>

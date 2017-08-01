@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--针对移动端的viewport通用设置-->
+    <meta name="viewport"
+          content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+    <title>月单购买</title>
+    <style TYPE="text/css">
+        html {
+            font: 10px Lucida Grande, 'Microsoft YaHei', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+        }
+        body{
+            color:#555;
+        }
+        .buyMonthly {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .buyMonthly label{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        footer {
+            display: flex;
+            flex: 0 0 5rem;
+            border-top: 1px solid #E4E3E4;
+        }
+        header{
+            display: flex;
+            flex: 0 0 4rem;
+            border-bottom: 1px solid #E4E3E4;
+            color:#555;
+        }
+        .header-img {
+            height: 2rem;
+            margin-top: 1rem ;
+            max-width: 100%;
+            color:#555;
+        }
+        .header-content {
+            margin: 0 auto;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 4rem;
+        }
+
+        .buyMonthly-body {
+            flex: 1;
+            padding-top: 1rem;
+
+        }
+        .buyMonthly-footer-2child {
+            flex: 0 0 66.6666%;
+        }
+        .buyMonthly-footer-child {
+            flex: 1;
+            display: flex;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+        .buyMonthly-footer-span {
+            display: inline-block;
+            padding-right: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+        }
+        .totalPrice{
+            display: block;
+            font-size: 1.7rem;
+            color: #FBB935;
+            font-weight: bold;
+        }
+        .buyMonthly-footer-btn{
+            height: 4rem;
+            border: none;
+            background-color: #FBB935;
+            font-size: 1.7rem;
+            color: #fff;
+            width: 100%;
+        }
+        .buyMonthly-icon{
+            width: 1.5rem;
+            height: 1.5rem;
+            max-width: 100%;
+            display: inline-block;
+        }
+        .multiply-select{
+            display: flex;
+            align-items: center;
+            margin: .5rem 0;
+            padding: .5rem;
+            font-size: 1.4rem;
+        }
+        .multiply-select-body{
+            flex: 1;
+            margin: 0 1rem;
+        }
+        #people-table {
+            width: 100%;
+            max-width: 100%;
+            border-spacing: 0;
+            border-collapse: collapse;
+            border-color: grey;
+        }
+        #people-table td{
+            font-size: 1.4rem;
+            padding: .2rem;
+        }
+    </style>
+</head>
+<body class="buyMonthly">
+<header>
+    <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+    <span class="header-content">月单购买</span>
+</header>
+<div class="buyMonthly-body">
+    <form>
+        <label for="sel">所属组织：</label>
+        <select name="" id="sel">
+            <option value="1" selected> 昆山无忧 </option>
+            <option value="2" > 中国移动 </option>
+            <option value="3" > 中国电信 </option>
+        </select><br>
+
+        <label>服务期限：</label>
+        <p style="display: inline-block">2017-09-01 ~ 2017-09-30 [30天]</p><br>
+
+        <label>收货地址：</label>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon" src="icon/buyMonthly/收货地址.svg" alt=""/>
+
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>收件人：郑浩</span>
+                    <span style="margin-left: 1rem">联系电话：18896724561</span>
+                </div>
+                <div>
+                    <span>收件地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
+                    <span style="margin-left: 1rem">邮政编码：000000</span>
+                </div>
+            </div>
+
+            <img class="buyMonthly-icon" src="icon/buyMonthly/向右.svg" alt=""/>
+
+        </div><br>
+
+        <label>开票资料：</label>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon" src="icon/buyMonthly/开票.svg" alt=""/>
+
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>开票类型：普通票</span>
+                </div>
+                <div>
+                    <span>公司名称：中国移动苏州研发中心</span>
+                </div>
+                <div>
+                    <span>公司地址：江苏省苏州市科技城昆仑山路58号</span>
+                </div>
+                <div>
+                    <span>联系电话：0512-8888888</span>
+                </div>
+                <div>
+                    <span>开户银行：招商银行(苏州新区支行)</span>
+                </div>
+                <div>
+                    <span>银行帐号：6217002710000688888</span>
+                </div>
+            </div>
+
+            <img class="buyMonthly-icon" src="icon/buyMonthly/向右.svg" alt=""/>
+
+        </div><br>
+
+        <label>订单人员：</label>
+        <table id="people-table">
+            <thead>
+                <tr>
+                    <th><input style="visibility: hidden" type="checkbox" name=""  value=""/></th>
+                    <th>序号</th>
+                    <th>身份证号</th>
+                    <th>姓名</th>
+                    <th>服务单价</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name=""  value=""/><br>
+                    </td>
+                    <td>1</td>
+                    <td>370305198908050410</td>
+                    <td>郑浩</td>
+                    <td>¥1.25/天</td>
+                    <td>
+                        <span><img class="buyMonthly-icon" src="icon/buyMonthly/删除.svg" alt=""/></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name=""  value=""/><br>
+                    </td>
+                    <td>2</td>
+                    <td>370305198908050410</td>
+                    <td>郑浩</td>
+                    <td>¥1.25/天</td>
+                    <td>
+                        <span><img class="buyMonthly-icon" src="icon/buyMonthly/删除.svg" alt=""/></span>
+                    </td>                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name=""  value=""/><br>
+                    </td>
+                    <td>3</td>
+                    <td>370305198908050410</td>
+                    <td>郑浩</td>
+                    <td>¥1.25/天</td>
+                    <td>
+                        <span><img class="buyMonthly-icon" src="icon/buyMonthly/删除.svg" alt=""/></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name=""  value=""/><br>
+                    </td>
+                    <td>4</td>
+                    <td>370305198908050410</td>
+                    <td>郑浩</td>
+                    <td>¥1.25/天</td>
+                    <td>
+                        <span><img class="buyMonthly-icon" src="icon/buyMonthly/删除.svg" alt=""/></span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</div>
+<footer>
+    <span class="buyMonthly-footer-2child">
+        <span class="buyMonthly-footer-span">服务金额：¥ 50.0</span>
+        <span class="buyMonthly-footer-span">资料运费：+ ¥12.0</span>
+        <span class="totalPrice">订单总额：¥ 67.0</span>
+    </span>
+    <span class="buyMonthly-footer-child">
+        <button type="submit" class="buyMonthly-footer-btn">立即下单</button>
+    </span>
+</footer>
+</body>
+</html>
