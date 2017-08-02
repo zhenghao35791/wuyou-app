@@ -52,6 +52,9 @@
 
         .manageAddress-footer-btn{
             height: 4rem;
+            line-height: 4rem;
+            text-align: center;
+            text-decoration: none;
             border: none;
             background-color: #FBB935;
             font-size: 1.7rem;
@@ -93,11 +96,20 @@
         form div{
             padding: .2rem;
         }
+        .noteDataActive{
+            border-color: #FBB935;
+        }
+        .manageAddress-btns-1 a{
+            text-decoration: none;
+            color: #555;
+        }
     </style>
 </head>
 <body class="manageAddress">
 <header>
-    <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+    <a style="text-decoration:none" href="buyMonthly.html">
+        <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+    </a>
     <span class="header-content">管理开票资料</span>
 </header>
 <div class="manageAddress-body">
@@ -124,15 +136,15 @@
                 </div>
             </div>
         </div>
-        <div class="manageAddress-btns">
+        <div class="manageAddress-btns noteDataActive">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="" id="" value=""/>设为默认
+                    <input type="radio" name="radio" value="" checked="true"/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
-                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+                <a href="editNoteData.html"><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
         <br>
@@ -162,12 +174,12 @@
         <div class="manageAddress-btns">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="" id="" value=""/>设为默认
+                    <input type="radio" name="radio" value=""/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
-                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
         <br>
@@ -176,7 +188,7 @@
     </form>
 </div>
 <footer>
-    <button type="submit" class="manageAddress-footer-btn">添加开票资料</button>
+    <a href="addNoteData.html" type="submit" class="manageAddress-footer-btn">添加开票资料</a>
 </footer>
 </body>
 </html>

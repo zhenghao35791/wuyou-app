@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 
-    <title>添加开票资料</title>
+    <title>编辑地址</title>
     <style TYPE="text/css">
         html {
             font: 10px Lucida Grande, 'Microsoft YaHei', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
@@ -54,8 +54,8 @@
         .addAddress-footer-btn {
             height: 4rem;
             line-height: 4rem;
-            text-align: center;
             text-decoration: none;
+            text-align: center;
             border: none;
             background-color: #FBB935;
             font-size: 1.7rem;
@@ -96,10 +96,10 @@
             display: flex;
         }
         .addAddress-col label{
-            flex: 0 0 32%;
+            flex: 0 0 25%;
         }
         .addAddress-col input{
-            flex: 0 0 63%;
+            flex: 0 0 70%;
         }
         .addAddress-check{
             margin: auto 0;
@@ -112,55 +112,48 @@
 </head>
 <body class="addAddress">
 <header>
-    <a href="manageNoteData.html">
+    <a href="manageAddress.html">
         <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
     </a>
-    <span class="header-content">添加开票资料</span>
+    <span class="header-content">编辑地址</span>
 </header>
 <div class="addAddress-body">
     <div class="addAddress-select-body">
         <div class="addAddress-col">
-            <label for="sel">开票类型：</label>
-            <select name="" id="sel">
-                <option value="2"> 专用票</option>
-                <option value="1" selected>普通票 </option>
-            </select>
-        </div>
-        <div class="addAddress-col">
-            <label>&nbsp;&nbsp;&nbsp;公司名称：</label>
-            <input type="text" size=""  placeholder="请输入..."/><br>
-        </div>
-        <div class="addAddress-col">
-            <label>社会信用代码：</label>
-            <input type="number" size="" placeholder="请输入..."/>
-        </div>
-
-        <div class="addAddress-col">
-            <label>公司地址：</label>
-            <input type="text" size="" placeholder="请输入..."/>
+            <label>&nbsp;&nbsp;&nbsp;收件人：</label>
+            <input type="text" size="" maxlength="8" placeholder="" value="郑浩"/><br>
         </div>
         <div class="addAddress-col">
             <label>联系电话：</label>
-            <input type="tel" size=""  placeholder="请输入..."/>
+            <input type="tel" size="" placeholder="" value="18896724561"/>
         </div>
         <div class="addAddress-col">
-            <label>开户银行：</label>
-            <input type="text" size="" placeholder=""/>
+            <label for="sel">所在地区：</label>
+            <select name="" id="sel">
+                <option value="2"> 上海</option>
+                <option value="1" selected> 广州市</option>
+                <option value="3"> 深圳</option>
+                <option value="4"> 北京</option>
+            </select>
         </div>
         <div class="addAddress-col">
-            <label>银行帐号：</label>
-            <input type="number" size=""  placeholder=""/>
+            <label>收件地址：</label>
+            <input type="text" size="" maxlength="8" placeholder="" value="江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心"/>
         </div>
         <div class="addAddress-col">
-            <label>默认开票：</label>
+            <label>邮政编码：</label>
+            <input type="text" size="" maxlength="8" placeholder="" value="000000"/>
+        </div>
+        <div class="addAddress-col">
+            <label>默认地址：</label>
             <div class="addAddress-check">
-                <input id="addAddress-checkbox" type="checkbox" name="" placeholder=""/>
+                <input id="addAddress-checkbox" type="checkbox" name="" checked="true"/>
             </div>
         </div>
     </div>
 </div>
 <footer>
-    <a href="manageNoteData.html" type="submit" class="addAddress-footer-btn">保存开票资料</a>
+    <a href="manageAddress.html" type="submit" class="addAddress-footer-btn">保存地址</a>
 </footer>
 </body>
 </html>

@@ -52,11 +52,14 @@
 
         .manageAddress-footer-btn{
             height: 4rem;
+            line-height: 4rem;
             border: none;
             background-color: #FBB935;
             font-size: 1.7rem;
             color: #fff;
             width: 100%;
+            text-decoration: none;
+            text-align: center;
         }
 
         .manageAddress-select{
@@ -93,11 +96,20 @@
         .manageAddress-select-body div span{
             padding: .5rem 0;
         }
+        .addressActive{
+            border-color: #FBB935;
+        }
+        .manageAddress-btns a{
+            text-decoration: none;
+            color: #555
+        }
     </style>
 </head>
 <body class="manageAddress">
 <header>
-    <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+    <a style="text-decoration:none" href="buyMonthly.html">
+        <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+    </a>
     <span class="header-content">管理收货地址</span>
 </header>
 <div class="manageAddress-body">
@@ -114,15 +126,15 @@
                 </div>
             </div>
         </div>
-        <div class="manageAddress-btns">
+        <div class="manageAddress-btns addressActive">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="" id="radio" value=""/>设为默认
+                    <input type="radio" name="radio"  value="" checked="true"/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
-                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+                <a href="editAddress.html" style=""><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
         <br>
@@ -141,12 +153,12 @@
         <div class="manageAddress-btns">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="" id="radio" value=""/>设为默认
+                    <input type="radio" name="radio" value=""/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
-                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
         <br>
@@ -165,12 +177,12 @@
         <div class="manageAddress-btns">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="" id="radio" value=""/>设为默认
+                    <input type="radio" name="radio" value=""/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
-                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
         <br>
@@ -189,12 +201,12 @@
         <div class="manageAddress-btns">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="" id="radio" value=""/>设为默认
+                    <input type="radio" name="radio" value=""/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <span><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</span>
-                <span><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</span>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
         <br>
@@ -202,7 +214,7 @@
     </form>
 </div>
 <footer>
-    <button type="submit" class="manageAddress-footer-btn">添加新地址</button>
+    <a href="addAddress.html" type="submit" class="manageAddress-footer-btn" >添加新地址</a>
 </footer>
 </body>
 </html>

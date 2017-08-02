@@ -156,6 +156,10 @@
             height: 1rem;
             line-height: 1rem;
         }
+        .parent a {
+            text-decoration: none;
+            color: #555;
+        }
     </style>
 </head>
 <body class="index">
@@ -166,10 +170,10 @@
     <main class="index-content"></main>
     <nav class="index-nav">
         <div class="parent">
-            <span class="child" id="nav01">
+            <a class="child" href="buyMonthly.html" id="nav01">
                 <img class="nav-img" src="icon/index/左侧菜单_月%20(1).svg" alt=""/>
                 <span class="nav-span">月单购买</span>
-            </span>
+            </a>
             <span class="child" id="nav02">
                 <img class="nav-img" src="icon/index/零售订单.svg" alt=""/>
                 <span class="nav-span">零单购买</span>
@@ -193,7 +197,7 @@
                 <li>更专业、更灵活</li>
             </ul>
             <button class="ads-btn" type="button">
-                <span class="ads-btn-content">立即购买</span>
+                <a style="text-decoration:none" href="buyMonthly.html" class="ads-btn-content">立即购买</a>
             </button>
         </div>
         <div class="index-ads-right">
