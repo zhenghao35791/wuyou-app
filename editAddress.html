@@ -5,155 +5,71 @@
     <!--针对移动端的viewport通用设置-->
     <meta name="viewport"
           content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-
     <title>编辑地址</title>
-    <style TYPE="text/css">
-        html {
-            font: 10px Lucida Grande, 'Microsoft YaHei', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
-        }
-        body{
-            color:#555;
-        }
-        .addAddress {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        footer {
-            display: flex;
-            flex: 0 0 5rem;
-            border-top: .1rem solid #E4E3E4;
-        }
-
-        header {
-            display: flex;
-            flex: 0 0 4rem;
-            border-bottom: .1rem solid #E4E3E4;
-            color:#555;
-        }
-
-        .addAddress-body {
-            flex: 1;
-            padding-top: 1rem;
-        }
-
-        .header-img {
-            height: 2rem;
-            margin-top: 1rem;
-            max-width: 100%;
-        }
-
-        .header-content {
-            margin: 0 auto;
-            font-size: 1.8rem;
-            font-weight: bold;
-            line-height: 4rem;
-        }
-
-        .addAddress-footer-btn {
-            height: 4rem;
-            line-height: 4rem;
-            text-decoration: none;
-            text-align: center;
-            border: none;
-            background-color: #FBB935;
-            font-size: 1.7rem;
-            color: #fff;
-            width: 100%;
-        }
-
-        .addAddress-select {
-            display: flex;
-            margin: .5rem 0;
-        }
-
-        .addAddress-select-body {
-            flex: 1;
-            margin: 0 1rem;
-        }
-
-        .addAddress-icon {
-            width: 1.5rem;
-            height: 1.5rem;
-            max-width: 100%;
-            display: inline-block;
-        }
-
-        .addAddress label {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: right;
-            padding: .5rem 0;
-        }
-
-        .addAddress-col input, .addAddress-col select {
-            padding: .5rem 1rem;
-            border: .1rem solid #ccc;
-            margin-bottom: 1rem;
-        }
-        .addAddress-col{
-            display: flex;
-        }
-        .addAddress-col label{
-            flex: 0 0 25%;
-        }
-        .addAddress-col input{
-            flex: 0 0 70%;
-        }
-        .addAddress-check{
-            margin: auto 0;
-
-        }
-        #addAddress-checkbox{
-            margin: auto 0;
-        }
-    </style>
+    <link rel="stylesheet" href="static/css/common.css"/>
+    <style TYPE="text/css"></style>
 </head>
-<body class="addAddress">
+<body class="add">
 <header>
     <a href="manageAddress.html">
-        <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+        <img class="header-img" src="static/icon/buyMonthly/返回.svg" alt=""/>
     </a>
     <span class="header-content">编辑地址</span>
 </header>
-<div class="addAddress-body">
-    <div class="addAddress-select-body">
-        <div class="addAddress-col">
-            <label>&nbsp;&nbsp;&nbsp;收件人：</label>
-            <input type="text" size="" maxlength="8" placeholder="" value="郑浩"/><br>
+<div class="add-body">
+    <div class="add-select-body">
+        <div class="add-col">
+            <label>收件人</label>
+            <input type="text" size="" maxlength="8" value="郑浩"/>
         </div>
-        <div class="addAddress-col">
-            <label>联系电话：</label>
-            <input type="tel" size="" placeholder="" value="18896724561"/>
+        <div class="add-col">
+            <label>联系电话</label>
+            <input type="tel" size="" value="18896724561"/>
         </div>
-        <div class="addAddress-col">
-            <label for="sel">所在地区：</label>
-            <select name="" id="sel">
-                <option value="2"> 上海</option>
-                <option value="1" selected> 广州市</option>
-                <option value="3"> 深圳</option>
-                <option value="4"> 北京</option>
-            </select>
+        <div class="add-col edit-col">
+            <div class="long-select-wrapper">
+                <label for="sel">所在省份</label>
+                <select name="" id="sel">
+                    <option value="1" selected> 江苏省</option>
+                </select>
+            </div>
         </div>
-        <div class="addAddress-col">
-            <label>收件地址：</label>
-            <input type="text" size="" maxlength="8" placeholder="" value="江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心"/>
+        <div class="add-col edit-col">
+            <div class="long-select-wrapper">
+                <label for="sel2">所在城市</label>
+                <select name="" id="sel2">
+                    <option value="1" selected> 苏州市</option>
+                </select>
+            </div>
         </div>
-        <div class="addAddress-col">
-            <label>邮政编码：</label>
-            <input type="text" size="" maxlength="8" placeholder="" value="000000"/>
+        <div class="add-col edit-col">
+            <div class="long-select-wrapper">
+                <label for="sel3">所在区</label>
+                <select name="" id="sel3">
+                    <option value="1" selected> 高新区</option>
+                </select>
+            </div>
         </div>
-        <div class="addAddress-col">
-            <label>默认地址：</label>
-            <div class="addAddress-check">
-                <input id="addAddress-checkbox" type="checkbox" name="" checked="true"/>
+
+        <div class="add-col edit-col">
+            <label>详细地址</label>
+            <input type="text" value="昆仑山路58号"/>
+        </div>
+        <div class="add-col">
+            <label>邮政编码</label>
+            <input type="text" size="" maxlength="8" value="00000000"/>
+        </div>
+        <div class="add-col">
+            <label>默认地址</label>
+
+            <div class="add-check">
+                <input class="add-checkbox" type="checkbox" name="" placeholder="" checked/>
             </div>
         </div>
     </div>
 </div>
 <footer>
-    <a href="manageAddress.html" type="submit" class="addAddress-footer-btn">保存地址</a>
+    <a href="manageAddress.html" type="submit" class="footer-btn">保存地址</a>
 </footer>
 </body>
 </html>

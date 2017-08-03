@@ -5,122 +5,26 @@
     <!--针对移动端的viewport通用设置-->
     <meta name="viewport"
           content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-
     <title>管理收货地址</title>
-    <style TYPE="text/css">
-        html {
-            font: 10px Lucida Grande, 'Microsoft YaHei', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
-        }
-        body{
-            color:#555;
-        }
-        .manageAddress {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-        .manageAddress label{
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-        footer {
-            display: flex;
-            flex: 0 0 5rem;
-            border-top: 1px solid #E4E3E4;
-        }
-        header{
-            display: flex;
-            flex: 0 0 4rem;
-            border-bottom: 1px solid #E4E3E4;
-            color: #555;
-        }
-        .manageAddress-body{
-            flex: 1;
-            padding-top: 1rem;
-        }
-        .header-img {
-            height: 2rem;
-            margin-top: 1rem ;
-            max-width: 100%;
-        }
-        .header-content {
-            margin: 0 auto;
-            font-size: 1.8rem;
-            font-weight: bold;
-            line-height: 4rem;
-        }
-
-        .manageAddress-footer-btn{
-            height: 4rem;
-            line-height: 4rem;
-            border: none;
-            background-color: #FBB935;
-            font-size: 1.7rem;
-            color: #fff;
-            width: 100%;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .manageAddress-select{
-            display: flex;
-            font-size: 1.5rem;
-            align-items: center;
-            margin: .5rem 0;
-        }
-        .manageAddress-select-body{
-            flex: 1;
-            margin: 0 1rem;
-        }
-        .manageAddress-btns{
-            padding-bottom: .5rem;
-            font-size: 1.3rem;
-            display: flex;
-            border-bottom: 2px solid #E4E3E4;
-        }
-        .manageAddress-btns span{
-           vertical-align: top;
-        }
-        .manageAddress-btns-2{
-            flex: 0 0 70%;
-        }
-        .manageAddress-btns-1{
-            flex: 1;
-        }
-        .manageAddress-icon{
-            width: 1.5rem;
-            height: 1.5rem;
-            max-width: 100%;
-            display: inline-block;
-        }
-        .manageAddress-select-body div span{
-            padding: .5rem 0;
-        }
-        .addressActive{
-            border-color: #FBB935;
-        }
-        .manageAddress-btns a{
-            text-decoration: none;
-            color: #555
-        }
-    </style>
+    <link rel="stylesheet" href="static/css/common.css"/>
+    <style TYPE="text/css"></style>
 </head>
 <body class="manageAddress">
 <header>
     <a style="text-decoration:none" href="buyMonthly.html">
-        <img class="header-img" src="icon/buyMonthly/返回.svg" alt=""/>
+        <img class="header-img" src="static/icon/buyMonthly/返回.svg" alt=""/>
     </a>
     <span class="header-content">管理收货地址</span>
 </header>
 <div class="manageAddress-body">
-    <form>
+    <form class="manageAddress-form">
         <div class="manageAddress-select">
             <div class="manageAddress-select-body" style="display: inline-block">
-                <div>
+                <div class="manageAddress-col">
                     <span>收件人：郑浩</span>
                     <span style="margin-left: 1rem">联系电话：18896724561</span>
                 </div>
-                <div>
+                <div class="manageAddress-col">
                     <span>收件地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
                     <span style="margin-left: 1rem">邮政编码：000000</span>
                 </div>
@@ -133,88 +37,87 @@
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <a href="editAddress.html" style=""><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
-                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
+                <a href="editAddress.html" style=""><img class="manageAddress-icon" src="static/icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="static/icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
-        <br>
+
         <div class="manageAddress-select">
             <div class="manageAddress-select-body" style="display: inline-block">
-                <div>
+                <div class="manageAddress-col">
                     <span>收件人：郑浩</span>
                     <span style="margin-left: 1rem">联系电话：18896724561</span>
                 </div>
-                <div>
+                <div class="manageAddress-col">
                     <span>收件地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
                     <span style="margin-left: 1rem">邮政编码：000000</span>
                 </div>
             </div>
         </div>
-        <div class="manageAddress-btns">
+        <div class="manageAddress-btns ">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="radio" value=""/>设为默认
+                    <input type="radio" name="radio"  value=""/>设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
-                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
+                <a href="editAddress.html" style=""><img class="manageAddress-icon" src="static/icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="static/icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
-        <br>
+
         <div class="manageAddress-select">
             <div class="manageAddress-select-body" style="display: inline-block">
-                <div>
+                <div class="manageAddress-col">
                     <span>收件人：郑浩</span>
                     <span style="margin-left: 1rem">联系电话：18896724561</span>
                 </div>
-                <div>
+                <div class="manageAddress-col">
                     <span>收件地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
                     <span style="margin-left: 1rem">邮政编码：000000</span>
                 </div>
             </div>
         </div>
-        <div class="manageAddress-btns">
+        <div class="manageAddress-btns ">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="radio" value=""/>设为默认
+                    <input type="radio" name="radio"  value="" />设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
-                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
+                <a href="editAddress.html" style=""><img class="manageAddress-icon" src="static/icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="static/icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
-        <br>
+
         <div class="manageAddress-select">
             <div class="manageAddress-select-body" style="display: inline-block">
-                <div>
+                <div class="manageAddress-col">
                     <span>收件人：郑浩</span>
                     <span style="margin-left: 1rem">联系电话：18896724561</span>
                 </div>
-                <div>
+                <div class="manageAddress-col">
                     <span>收件地址：江苏省苏州市科技城昆仑山路58号中国移动苏州研发中心</span>
                     <span style="margin-left: 1rem">邮政编码：000000</span>
                 </div>
             </div>
         </div>
-        <div class="manageAddress-btns">
+        <div class="manageAddress-btns ">
             <div class="manageAddress-btns-2">
                 <span>
-                    <input type="radio" name="radio" value=""/>设为默认
+                    <input type="radio" name="radio"  value="" />设为默认
                 </span>
             </div>
             <div class="manageAddress-btns-1">
-                <a><img class="manageAddress-icon" src="icon/manageAddress/编辑.svg" alt=""/>编辑</a>
-                <a><img class="manageAddress-icon" src="icon/manageAddress/删除.svg" alt=""/>删除</a>
+                <a href="editAddress.html" style=""><img class="manageAddress-icon" src="static/icon/manageAddress/编辑.svg" alt=""/>编辑</a>
+                <a><img class="manageAddress-icon" src="static/icon/manageAddress/删除.svg" alt=""/>删除</a>
             </div>
         </div>
-        <br>
 
     </form>
 </div>
 <footer>
-    <a href="addAddress.html" type="submit" class="manageAddress-footer-btn" >添加新地址</a>
+    <a href="addAddress.html" type="submit" class="footer-btn" >添加新地址</a>
 </footer>
 </body>
 </html>
