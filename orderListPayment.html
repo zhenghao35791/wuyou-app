@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--针对移动端的viewport通用设置-->
+    <meta name="viewport"
+          content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>订单支付</title>
+    <link rel="stylesheet" href="static/css/common.css"/>
+    <style TYPE="text/css">
+        .orderPayment {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .orderPayment-body {
+            flex: 1;
+            padding-top: 1rem;
+        }
+
+        .orderPayment-col {
+            display: flex;
+            height: 2rem;
+            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .orderPayment-col label {
+            flex: 0 0 37%;
+            text-align: center;
+        }
+
+        .orderPayment-col span {
+            flex: 0 0 60%;
+        }
+
+        .orderPayment-totalPrice {
+            font-size: 1.4rem;
+            color: #FF6633;
+        }
+
+        .orderPayment-payBody {
+            padding-bottom: 1rem;
+            border-bottom: .1rem solid #FF6633;
+        }
+
+        .orderPayment-image-div {
+            display: inline-block;
+            margin: 1rem 1.5rem 0 0.5rem;
+        }
+
+        .orderPayment-image {
+            border: .1rem solid #fff;
+        }
+
+        .orderPayment-image-active img {
+            border-color: #FBB935;
+        }
+
+        .image-down-div {
+            margin-top: .5rem;
+            margin-left: 3.5rem;
+        }
+
+        .image-down {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .border-none {
+            border: none !important;
+        }
+
+        .orderPayment-note {
+            color: #ff6633;
+            font-size: 1rem;
+            font-style: italic;
+            padding: 0 .2rem;
+        }
+    </style>
+</head>
+<body class="orderPayment">
+<header>
+    <a href="orderList.html">
+        <img class="header-img" src="static/icon/buyMonthly/返回.svg" alt=""/>
+    </a>
+    <span class="header-content">订单支付</span>
+</header>
+<div class="orderPayment-body">
+    <div class="orderPayment-payBody">
+        <div class="orderPayment-col">
+            <label>订单编号：</label>
+            <span>P000000061000006 [月单]</span>
+        </div>
+        <div class="orderPayment-col">
+            <label>所属组织：</label>
+            <span>中国移动苏州研发中心 [月单]</span>
+        </div>
+        <div class="orderPayment-col">
+            <label>服务期限：</label>
+            <span>2017-09-01~2017-09-30[30天]</span>
+        </div>
+        <div class="orderPayment-col">
+            <label>服务人数：</label>
+            <span> 1人 </span>
+        </div>
+        <div class="orderPayment-col">
+            <label>服务金额：</label>
+            <span> ¥37.5</span>
+        </div>
+        <div class="orderPayment-col">
+            <label>资料运费：</label>
+            <span>+ ¥12.00</span>
+        </div>
+        <div class="orderPayment-col">
+            <label>订单总额：</label>
+            <span class="orderPayment-totalPrice"> ¥49.5</span>
+        </div>
+    </div>
+    <div class="orderPayment-payWays">
+        <div class="orderPayment-image-div orderPayment-image-active">
+            <img class="orderPayment-image" src="static/icon/orderPayment/offline.jpg" alt=""/>
+        </div>
+        <div class="orderPayment-image-div">
+            <img class="orderPayment-image" src="static/icon/orderPayment/alipay.jpg" alt=""/>
+        </div>
+        <div class="image-down-div">
+            <img class="image-down" src="static/icon/orderPayment/向下箭头.svg" alt=""/>
+        </div>
+        <div class="orderPayment-payBody border-none">
+            <div class="orderPayment-col">
+                <label>收款方&nbsp;&nbsp;&nbsp;：</label>
+                <span>上海瀛幸信息科技有限公司</span>
+            </div>
+            <div class="orderPayment-col">
+                <label>开户银行：</label>
+                <span>农业银行昆山开发区支行</span>
+            </div>
+            <div class="orderPayment-col">
+                <label>收款账号：</label>
+                <span> 10532501040033478</span>
+            </div>
+            <div class="orderPayment-col">
+                <p class="orderPayment-note">本月起为增加流程进度速度，原保险公司帐号不再收款，请注意付款对象～！在本月初发票及保单均会以顺丰快递的形式送达!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <a href="orderList.html" type="submit" class="footer-btn">立即支付</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,407 @@
+/*@font-face {
+    font-family: 'MicrosoftYaHei';
+    src: url('MicrosoftYaHei.eot');
+    src: url('MicrosoftYaHei.eot?#iefix') format('embedded-opentype'),
+    url('MicrosoftYaHei.woff') format('woff'),
+    url('MicrosoftYaHei.ttf')  format('truetype'),
+    url('MicrosoftYaHei.svg#MicrosoftYaHei') format('svg');
+}*/
+html {
+    font: 10px Lucida Grande, 'Microsoft YaHei', "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+}
+
+Element {
+    border-width: thin;
+}
+
+body {
+    color: #555;
+    padding: 0;
+    margin: 0;
+}
+/*header 样式*/
+header {
+    display: flex;
+    flex: 0 0 4rem;
+    border-bottom: 1px solid #E4E3E4;
+    color: #555;
+}
+
+.header-img {
+    position: absolute;
+    height: 2rem;
+    left: 1rem;
+    top: 1rem;
+    max-width: 100%;
+}
+
+.header-content {
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+/*footer 样式*/
+footer {
+    display: flex;
+    flex: 0 0 4rem;
+    border-top: 1px solid #E4E3E4;
+}
+
+.footer-btn {
+    height: 4rem;
+    line-height: 4rem;
+    border: none;
+    font-size: 1.7rem;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(left,#FBB935,#ff6633);
+    background: -ms-linear-gradient(left,#FBB935,#ff6633);
+    background: -webkit-linear-gradient(left,#FBB935,#ff6633);
+    background: -o-linear-gradient(left,#FBB935,#ff6633);
+    background: -moz-linear-gradient(left,#FBB935,#ff6633);
+}
+
+.search-icon{
+    position: absolute;
+    height: 2rem;
+    right: 1rem;
+    top: 1rem;
+    max-width: 100%;
+}
+
+.f-r {
+    float: right;
+    margin-right: .5rem;
+}
+.f-l {
+    float: left;
+}
+.m-r-1{
+    margin-right: .1rem;
+}
+.shadow{
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0,0,0,0.1);
+}
+.short-select-wrapper, .long-select-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.short-select-wrapper label, .long-select-wrapper label {
+    font-size: 1.2rem;
+}
+
+.short-select-wrapper select {
+    background: url("../icon/buyMonthly/向下箭头.png") no-repeat scroll right center transparent;
+    padding-right: 2rem !important;
+}
+
+.long-select-wrapper select {
+    background: url("../icon/add/向右箭头.png") no-repeat scroll right center transparent;
+    padding-right: 2rem !important;
+    flex: 0 0 75%;
+}
+
+.long-select-wrapper select {
+    direction: rtl;
+}
+
+.long-select-wrapper select option {
+    direction: rtl;
+}
+
+select {
+    border: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.add-col select{
+    color: #A9A9A9;
+}
+.edit-col select{
+    color: #555;
+}
+/*icon统一样式*/
+.wuyou-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    max-width: 100%;
+    display: inline-block;
+}
+/*各浏览器下设定placehoder颜色*/
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #A9A9A9;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #A9A9A9;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #A9A9A9;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #A9A9A9;
+}
+/*清除浮动，解决父元素高度塌陷*/
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    overflow: hidden;
+}
+/*添加表单通用样式表 开始*/
+.add {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.add-body {
+    flex: 1;
+    padding-top: .5rem;
+    background-color: #f6f6f8;
+}
+
+.add-select-body {
+    flex: 1;
+}
+
+.add label {
+    font-size: 1.2rem;
+    text-align: right;
+    padding: .5rem 0;
+}
+
+.add-col input, .add-col select,.add-col span {
+    padding: .8rem 1rem;
+    border: none;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.add-col {
+    display: flex;
+    background-color: #fff;
+    border-bottom: .1rem solid #f6f6f8;
+    padding: .2rem 0;
+}
+
+.add-col label {
+    flex: 0 0 20%;
+    margin-right: 2%;
+}
+
+.add-col input {
+    flex: 0 0 70%;
+}
+
+.add-check {
+    margin: auto 0;
+}
+
+.add-checkbox {
+    margin: auto 0;
+}
+/*添加表单通用样式表 结束*/
+
+/*管理表单通用样式表 开始*/
+.manageAddress {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.manageAddress-body{
+    flex: 1;
+    background-color: #f6f6f8;
+}
+.manageAddress-select{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: .7rem 0;
+}
+.manageAddress-select-body{
+    flex: 1;
+    margin: 0 1rem;
+}
+.manageAddress-form{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.manageAddress-btns{
+    padding-bottom: .5rem;
+    font-size: 1.3rem;
+    display: flex;
+    border-bottom: .2rem solid #E4E3E4;
+}
+.manageAddress-btns span{
+    vertical-align: top;
+}
+.manageAddress-btns-2{
+    flex: 0 0 65%;
+}
+.manageAddress-btns-1{
+    flex: 1;
+}
+.manageAddress-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    max-width: 100%;
+    display: inline-block;
+}
+.addressActive{
+    border-color: #FBB935;
+}
+.manageAddress-btns a{
+    margin-right: .3rem;
+    text-decoration: none;
+    color: #555
+}
+.manageAddress-col{
+    padding: .2rem 0;
+}
+.manageAddress-form div{
+    padding: .2rem;
+}
+/*管理表单通用样式表 结束*/
+/*人员表格通用样式表 开始*/
+#people-table {
+    width: 100%;
+    max-width: 100%;
+    margin-top: .8rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-color: grey;
+}
+#people-table td{
+    font-size: 1.2rem;
+    padding: .2rem;
+}
+
+#people-table thead th{
+    text-align: center;
+    font-size: 1.2rem;
+}
+/*人员表格通用样式表 结束*/
+/*buyMonthly月单购买通用样式表 开始*/
+.buyMonthly {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.buyMonthly label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: .5rem;
+}
+.buyMonthly-body {
+    flex: 1;
+    padding: 1rem 0;
+}
+.buyMonthly-people-col{
+    font-size: 1rem;
+    color: grey;
+}
+.buyMonthly-footer-2child {
+    /*
+    flex: 0 0 66.6666%;
+    */
+    padding-left: .5rem;
+}
+.buyMonthly-footer-child {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.buyMonthly-footer-span {
+    display: inline-block;
+    padding-right: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.totalPrice{
+    display: block;
+    font-size: 1.7rem;
+    color: #ff6633;
+    font-weight: bold;
+}
+.buyMonthly-footer-btn{
+    height: 4rem;
+    line-height: 4rem;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-size: 1.7rem;
+    color: #fff;
+    width: 100%;
+    background: linear-gradient(left,#FBB935,#ff6633);
+    background: -ms-linear-gradient(left,#FBB935,#ff6633);
+    background: -webkit-linear-gradient(left,#FBB935,#ff6633);
+    background: -o-linear-gradient(left,#FBB935,#ff6633);
+    background: -moz-linear-gradient(left,#FBB935,#ff6633);
+}
+.buyMonthly-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    max-width: 100%;
+    display: inline-block;
+}
+.multiply-select{
+    display: flex;
+    align-items: center;
+    border-bottom: .2rem solid #f6f6f8;
+    margin: .3rem 0;
+    padding: .3rem;
+    font-size: 1.3rem;
+}
+.multiply-select-body{
+    flex: 1;
+    margin: 0 1rem;
+}
+.multiply-select-people{
+    font-size: 1rem !important;
+}
+/*buyMonthly月单购买通用样式表 结束*/
+/*员工列表样式 开始*/
+.order-people-col{
+    padding: .1rem 2rem;
+    background-color: #fff;
+    margin-bottom: .2rem;
+    box-shadow: .1rem .1rem .5rem rgba(0,0,0,0.1);
+}
+.order-people-col p{
+    padding: .1rem 0;
+}
+.order-people-col span{
+    color: grey;
+    padding-right: 1rem;
+}
+.order-people-body a{
+    text-decoration: none;
+    color: inherit;
+}
+/*员工列表样式 结束*/

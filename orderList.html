@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--针对移动端的viewport通用设置-->
+    <meta name="viewport"
+          content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>订单列表</title>
+    <link rel="stylesheet" href="static/css/common.css"/>
+    <style TYPE="text/css">
+        .orderList-nav-div {
+            display: flex;
+            background-color: #fff;
+            padding-left: 1em;
+            border-bottom: .1rem solid #f6f6f8;
+            margin-bottom: .5rem;
+        }
+
+        .orderList-nav {
+            flex: 1;
+            height: 3rem;
+            line-height: 3rem;
+        }
+
+        .orderList-nav-active span {
+            padding: .5rem;
+            border-bottom: .2rem solid #FF6633;
+        }
+
+        .order-header, .order-body, .order-footer {
+            border-bottom: .1rem solid #E4E3E4;
+        }
+
+        #order-select-body .add-col label {
+            flex: 0 0 40%;
+            padding-left: 1rem;
+            text-align: left;
+        }
+
+        #order-select-body .add-col span {
+            flex: 0 0 50%;
+            margin: auto 0;
+            text-align: right;
+        }
+
+        .order-footer {
+            padding: .5rem 0;
+            background-color: #fff;
+            margin-bottom: .5rem;
+        }
+
+        .order-footer button {
+            padding: .2rem .6rem;
+            margin-right: .5rem;
+            float: right;
+            border-radius: .5rem;
+            border: .1rem solid #E4E3E4;
+
+        }
+        .order-footer .order-footer-btn{
+            background-color: #fff;
+            color: #ff6633;
+        }
+        .order-footer .order-btn {
+            background-color: #ff6633;
+            color: #fff;
+        }
+        .order-footer a{
+            text-decoration: none;
+            color: inherit;
+            font-size: 1rem;
+        }
+        .order{
+            box-shadow: .1rem .1rem .5rem rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body class="add orderList">
+<header>
+    <a style="text-decoration:none" href="index.html">
+        <img class="header-img" src="static/icon/buyMonthly/返回.svg" alt=""/>
+    </a>
+    <span class="header-content">我的订单
+        <img class="search-icon" src="static/icon/orderDetail/搜索.svg" alt=""/>
+    </span>
+</header>
+<div class="orderList-body add-body">
+    <div class="orderList-nav-div">
+        <div class="orderList-nav orderList-nav-active"><span>全部</span></div>
+        <div class="orderList-nav">未支付</div>
+        <div class="orderList-nav">待审核</div>
+        <div class="orderList-nav">待出单</div>
+        <div class="orderList-nav">待开票</div>
+    </div>
+    <div class="add-select-body order-select-body" id="order-select-body">
+        <div class="order">
+            <div class="order-header">
+                <div class="add-col">
+                    <label>编号： P000000061000007</label>
+                    <span style="color: #11C7A7">未支付</span>
+                </div>
+            </div>
+            <div class="order-body">
+                <div class="add-col">
+                    <label>订单金额</label>
+                    <span>¥113.50</span>
+                </div>
+                <div class="add-col">
+                    <label>服务期限</label>
+                    <span>2017-08-03 ~ 2017-08-31</span>
+                </div>
+                <div class="add-col">
+                    <label>公司名称</label>
+                    <span>昆山无忧</span>
+                </div>
+            </div>
+            <div class="order-footer clearfix">
+                <button type="button" class="order-footer-btn"><a href="">删除</a></button>
+                <button type="button" class="order-footer-btn"><a href="orderPeopleList.html">查看人员</a></button>
+                <button type="button" class="order-footer-btn"><a href="orderDetail.html">查看订单</a></button>
+                <button type="button" class="order-btn"><a href="orderListPayment.html">支付</a></button>
+            </div>
+        </div>
+        <div class="order">
+            <div class="order-header">
+                <div class="add-col">
+                    <label>编号： P000000061000007</label>
+                    <span style="color: #11C7A7">未支付</span>
+                </div>
+            </div>
+            <div class="order-body">
+                <div class="add-col">
+                    <label>订单金额</label>
+                    <span>¥113.50</span>
+                </div>
+                <div class="add-col">
+                    <label>服务期限</label>
+                    <span>2017-08-03 ~ 2017-08-31</span>
+                </div>
+                <div class="add-col">
+                    <label>公司名称</label>
+                    <span>昆山无忧</span>
+                </div>
+            </div>
+            <div class="order-footer clearfix">
+                <button type="button" class="order-footer-btn"><a href="">删除</a></button>
+                <button type="button" class="order-footer-btn"><a href="orderPeopleList.html">查看人员</a></button>
+                <button type="button" class="order-footer-btn"><a href="orderDetail.html">查看订单</a></button>
+                <button type="button" class="order-btn"><a href="orderListPayment.html">支付</a></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

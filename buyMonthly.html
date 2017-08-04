@@ -9,92 +9,7 @@
     <title>月单购买</title>
     <link rel="stylesheet" href="static/css/common.css"/>
     <style TYPE="text/css">
-        .buyMonthly {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-        .buyMonthly label{
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-        .buyMonthly-body {
-            flex: 1;
-            padding: 1rem;
-        }
-        .buyMonthly-footer-2child {
-            flex: 0 0 66.6666%;
-            padding-left: .5rem;
-        }
-        .buyMonthly-footer-child {
-            flex: 1;
-            display: flex;
-            text-align: center;
-            margin: 0 auto;
 
-        }
-        .buyMonthly-footer-span {
-            display: inline-block;
-            padding-right: 1rem;
-            height: 1rem;
-            line-height: 1rem;
-        }
-        .totalPrice{
-            display: block;
-            font-size: 1.7rem;
-            color: #ff6633;
-            font-weight: bold;
-        }
-        .buyMonthly-footer-btn{
-            height: 4rem;
-            line-height: 4rem;
-            text-decoration: none;
-            text-align: center;
-            border: none;
-            font-size: 1.7rem;
-            color: #fff;
-            width: 100%;
-            background: linear-gradient(left,#FBB935,#ff6633);
-            background: -ms-linear-gradient(left,#FBB935,#ff6633);
-            background: -webkit-linear-gradient(left,#FBB935,#ff6633);
-            background: -o-linear-gradient(left,#FBB935,#ff6633);
-            background: -moz-linear-gradient(left,#FBB935,#ff6633);
-        }
-        .buyMonthly-icon{
-            width: 1.5rem;
-            height: 1.5rem;
-            max-width: 100%;
-            display: inline-block;
-        }
-        .multiply-select{
-            display: flex;
-            align-items: center;
-            border-bottom: .2rem solid #f6f6f8;
-            margin: .5rem 0;
-            padding: .5rem;
-            font-size: 1.2rem;
-        }
-        .multiply-select-body{
-            flex: 1;
-            margin: 0 1rem;
-        }
-        #people-table {
-            width: 100%;
-            max-width: 100%;
-            margin-top: .8rem;
-            border-spacing: 0;
-            border-collapse: collapse;
-            border-color: grey;
-        }
-        #people-table td{
-            font-size: 1.2rem;
-            padding: .2rem;
-        }
-
-        #people-table thead th{
-            text-align: center;
-            font-size: 1.2rem;
-        }
     </style>
 </head>
 <body class="buyMonthly">
@@ -110,14 +25,16 @@
             <label for="sel">所属组织：</label>
             <select name="" id="sel">
                 <option value="1" selected> 昆山无忧</option>
-                <option value="2" > 中国移动 </option>
-                <option value="3" > 中国电信 </option>
+                <option value="2"> 中国移动</option>
+                <option value="3"> 中国电信</option>
             </select>
         </div>
         <label>服务期限：</label>
-        <p style="display: inline-block">2017-09-01 ~ 2017-09-30 [30天]</p><br>
 
-        <label>收货地址：</label>
+        <p style="display: inline-block">2017-09-01 ~ 2017-09-30 [30天]</p>
+
+        <label style="display: block">收货地址：</label>
+
         <div class="multiply-select">
             <img class="buyMonthly-icon" src="static/icon/buyMonthly/收货地址.svg" alt=""/>
 
@@ -134,10 +51,10 @@
             <a style="text-decoration:none" href="manageAddress.html">
                 <img class="buyMonthly-icon" src="static/icon/buyMonthly/向右.svg" alt=""/>
             </a>
-
-        </div><br>
+        </div>
 
         <label>开票资料：</label>
+
         <div class="multiply-select">
             <img class="buyMonthly-icon" src="static/icon/buyMonthly/开票.svg" alt=""/>
 
@@ -148,12 +65,12 @@
                 <div>
                     <span>公司名称：中国移动苏州研发中心</span>
                 </div>
-               <!-- <div>
-                    <span>公司地址：江苏省苏州市科技城昆仑山路58号</span>
-                </div>
-                <div>
-                    <span>联系电话：0512-8888888</span>
-                </div>-->
+                <!-- <div>
+                     <span>公司地址：江苏省苏州市科技城昆仑山路58号</span>
+                 </div>
+                 <div>
+                     <span>联系电话：0512-8888888</span>
+                 </div>-->
                 <div>
                     <span>开户银行：招商银行(苏州新区支行) 苏州市干将西路489号(富达大厦二楼）</span>
                 </div>
@@ -165,84 +82,100 @@
                 <img class="buyMonthly-icon" src="static/icon/buyMonthly/向右.svg" alt=""/>
             </a>
 
-        </div><br>
-
-        <label>订单人员：
-            <a href="addPeople.html"><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/添加.svg" alt=""/></a>
-        </label>
-        <table id="people-table">
-            <thead>
-                <tr>
-                    <th><input style="visibility: hidden" type="checkbox" name=""  value=""/></th>
-                    <th>序号</th>
-                    <th>身份证号</th>
-                    <th>姓名</th>
-<!--
-                    <th>服务单价</th>
--->
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="checkbox" name=""  value=""/><br>
-                    </td>
-                    <td>1</td>
-                    <td>370305198908050410</td>
-                    <td>郑浩</td>
-<!--
-                    <td>¥1.25/天</td>
--->
-                    <td>
-                        <span><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/删除.svg" alt=""/></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name=""  value=""/><br>
-                    </td>
-                    <td>2</td>
-                    <td>370305198908050410</td>
-                    <td>郑浩</td>
-<!--
-                    <td>¥1.25/天</td>
--->
-                    <td>
-                        <span><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/删除.svg" alt=""/></span>
-                    </td>                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name=""  value=""/><br>
-                    </td>
-                    <td>3</td>
-                    <td>370305198908050410</td>
-                    <td>郑浩</td>
-<!--
-                    <td>¥1.25/天</td>
--->
-                    <td>
-                        <span><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/删除.svg" alt=""/></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name=""  value=""/><br>
-                    </td>
-                    <td>4</td>
-                    <td>370305198908050410</td>
-                    <td>郑浩</td>
-<!--
-                    <td>¥1.25/天</td>
--->
-                    <td>
-                        <span><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/删除.svg" alt=""/></span>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
+        </div>
     </form>
+    <label>订单人员：
+        <a href="addPeople.html"><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/添加.svg" alt=""/></a>
+    </label>
+
+    <div style="height: .5rem"></div>
+
+    <div class="multiply-select multiply-select-people">
+        <img class="buyMonthly-icon" src="static/icon/buyMonthly/选中.svg" alt=""/>
+
+        <div class="multiply-select-body" style="display: inline-block">
+            <div>
+                <span>郑浩</span>
+                <span style="margin-left: 1rem">370305198908050410</span>
+            </div>
+        </div>
+        <img class="buyMonthly-icon m-r-1" src="static/icon/buyMonthly/删除.svg" alt=""/>
+    </div>
+
+    <div class="multiply-select multiply-select-people">
+        <img class="buyMonthly-icon" src="static/icon/buyMonthly/选中.svg" alt=""/>
+
+        <div class="multiply-select-body" style="display: inline-block">
+            <div>
+                <span>郑浩</span>
+                <span style="margin-left: 1rem">370305198908050410</span>
+            </div>
+        </div>
+        <img class="buyMonthly-icon m-r-1" src="static/icon/buyMonthly/删除.svg" alt=""/>
+    </div>
+
+    <div class="multiply-select multiply-select-people">
+        <img class="buyMonthly-icon" src="static/icon/buyMonthly/选中.svg" alt=""/>
+
+        <div class="multiply-select-body" style="display: inline-block">
+            <div>
+                <span>郑浩</span>
+                <span style="margin-left: 1rem">370305198908050410</span>
+            </div>
+        </div>
+        <img class="buyMonthly-icon m-r-1" src="static/icon/buyMonthly/删除.svg" alt=""/>
+    </div>
+
+    <div class="multiply-select multiply-select-people">
+        <img class="buyMonthly-icon" src="static/icon/buyMonthly/未选中.svg" alt=""/>
+
+        <div class="multiply-select-body" style="display: inline-block">
+            <div>
+                <span>郑浩</span>
+                <span style="margin-left: 1rem">370305198908050410</span>
+            </div>
+        </div>
+        <img class="buyMonthly-icon m-r-1" src="static/icon/buyMonthly/删除.svg" alt=""/>
+    </div>
+
+    <div class="multiply-select multiply-select-people">
+        <img class="buyMonthly-icon" src="static/icon/buyMonthly/未选中.svg" alt=""/>
+
+        <div class="multiply-select-body" style="display: inline-block">
+            <div>
+                <span>郑浩</span>
+                <span style="margin-left: 1rem">370305198908050410</span>
+            </div>
+        </div>
+        <img class="buyMonthly-icon m-r-1" src="static/icon/buyMonthly/删除.svg" alt=""/>
+    </div>
+    <!--
+    <table id="people-table">
+        <thead>
+            <tr>
+                <th><input style="visibility: hidden" type="checkbox" name=""  value=""/></th>
+                <th>序号</th>
+                <th>身份证号</th>
+                <th>姓名</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" name=""  value=""/>
+                </td>
+                <td>1</td>
+                <td>370305198908050410</td>
+                <td>郑浩</td>
+                <td>
+                    <span><img class="buyMonthly-icon f-r" src="static/icon/buyMonthly/删除.svg" alt=""/></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+-->
 </div>
 <footer>
     <span class="buyMonthly-footer-2child">
