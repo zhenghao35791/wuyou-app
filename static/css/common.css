@@ -35,6 +35,14 @@ header {
     max-width: 100%;
 }
 
+.header-img-r {
+    position: absolute;
+    height: 2rem;
+    right: 1rem;
+    top: 1rem;
+    max-width: 100%;
+}
+
 .header-content {
     margin: 0 auto;
     font-size: 1.6rem;
@@ -47,7 +55,9 @@ footer {
     flex: 0 0 4rem;
     border-top: 1px solid #E4E3E4;
 }
-
+footer a{
+    text-decoration: none;
+}
 .footer-btn {
     height: 4rem;
     line-height: 4rem;
@@ -179,7 +189,9 @@ select {
 
 .add-body {
     flex: 1;
+    /*
     padding-top: .5rem;
+    */
     background-color: #f6f6f8;
 }
 
@@ -390,7 +402,9 @@ select {
 .order-people-col{
     padding: .1rem 2rem;
     background-color: #fff;
+    /*
     margin-bottom: .2rem;
+    */
     box-shadow: .1rem .1rem .5rem rgba(0,0,0,0.1);
 }
 .order-people-col p{
@@ -405,3 +419,70 @@ select {
     color: inherit;
 }
 /*员工列表样式 结束*/
+
+/*首页nav相关样式 开始*/
+.index-nav {
+    flex: 0 0 5rem;
+}
+
+.index-parent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-child {
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    font-size: 1.2rem;
+    background-color: white;
+    text-align: center;
+}
+.index-child-20 {
+    box-sizing: border-box;
+    flex: 0 0 20%;
+    font-size: 1.2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.nav-img {
+    margin-top: 1rem;
+    height: 2rem;
+    max-width: 100%;
+    line-height: 4rem;
+    background-size: cover;
+}
+
+.nav-span {
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+}
+/*首页nav相关样式 结束*/
+
+/*首页footer三标签样式 开始*/
+.footer-child {
+    flex: 0 0 33.3333%;
+    text-align: center;
+}
+
+.footer-img {
+    margin-top: .5rem;
+    height: 2rem;
+    max-width: 100%;
+    line-height: 2rem;
+    background-size: cover;
+}
+
+.footer-span {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    color: #ccc;
+}
+.footer-span-active {
+    color: #ff6633;
+}
+/*首页footer三标签样式 结束*/
