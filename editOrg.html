@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--针对移动端的viewport通用设置-->
+    <meta name="viewport"
+          content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>编辑组织信息</title>
+    <link rel="stylesheet" href="static/css/common.css"/>
+    <style TYPE="text/css"></style>
+</head>
+<body class="add">
+<header>
+    <a href="myOrgList.html">
+        <img class="header-img" src="static/icon/buyMonthly/返回.svg" alt=""/>
+    </a>
+    <span class="header-content">编辑组织信息</span>
+</header>
+<div class="add-body">
+    <div class="add-select-body">
+        <div class="add-col">
+            <label>组织名称</label>
+            <input type="text" size="" maxlength="8" value="昆山无忧发展公司" disabled/>
+        </div>
+        <div class="add-col">
+            <label>信用代码</label>
+            <input type="number" size="" value="1234567890"/>
+        </div>
+        <div class="add-col">
+            <label>所在地址</label>
+            <input type="text" size="" value="昆山市市南区前进路580号6栋43110室"/>
+        </div>
+        <div class="add-col">
+            <label>企业法人</label>
+            <input type="text" size="" value="袁健"/>
+        </div>
+        <div class="add-col">
+            <label>联系电话</label>
+            <input type="text" size="" maxlength="8" value="0512-12345678"/>
+        </div>
+        <div class="add-col">
+            <label>营业执照</label>
+            <input class="getOrg-upload" type="file" accept="image/*;capture=camera" >
+        </div>
+    </div>
+</div>
+<footer>
+    <a href="myOrgList.html" type="submit" class="footer-btn">保存组织信息</a>
+</footer>
+</body>
+</html>

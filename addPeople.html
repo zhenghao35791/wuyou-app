@@ -19,6 +19,15 @@
 <div class="add-body">
     <div class="add-select-body">
         <div class="add-col">
+            <div class="long-select-wrapper">
+                <label for="sel">所属组织</label>
+                <select name="" id="sel">
+                    <option value="1" selected> 昆山无忧 </option>
+                    <option value="0" > 中国铁路 </option>
+                </select>
+            </div>
+        </div>
+        <div class="add-col">
             <label>真实姓名</label>
             <input type="text" size="" maxlength="8" placeholder="请输入员工姓名"/>
         </div>
@@ -31,6 +40,7 @@
                 <label for="sel3">有无社保</label>
                 <select name="" id="sel3">
                     <option value="1" selected> 有</option>
+                    <option value="0" > 无</option>
                 </select>
             </div>
         </div>
@@ -45,7 +55,7 @@
     </div>
 </div>
 <footer>
-    <a href="buyMonthly.html" type="submit" class="footer-btn">保存员工信息</a>
+    <button onclick="window.history.back();" type="submit" class="footer-btn">保存员工信息</button>
 </footer>
 </body>
 </html>
