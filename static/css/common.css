@@ -20,7 +20,7 @@ body {
     margin: 0;
 }
 /*header 样式*/
-header {
+header,.header {
     display: flex;
     flex: 0 0 4rem;
     border-bottom: 1px solid #E4E3E4;
@@ -50,7 +50,7 @@ header {
     line-height: 4rem;
 }
 /*footer 样式*/
-footer {
+footer, .footer {
     display: flex;
     flex: 0 0 4rem;
     border-top: 1px solid #E4E3E4;
@@ -189,9 +189,7 @@ select {
 
 .add-body {
     flex: 1;
-    /*
-    padding-top: .5rem;
-    */
+    padding-top: .3rem;
     background-color: #f6f6f8;
 }
 
@@ -487,3 +485,86 @@ select {
     color: #ff6633;
 }
 /*首页footer三标签样式 结束*/
+/*登录注册相关css样式 开始*/
+.login-prepare-btn{
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border: none;
+    font-size: 1.7rem;
+    color: #fff;
+    width: 90%;
+    margin:1rem 5%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10rem;
+    background: linear-gradient(left,#FBB935,#ff6633);
+    background: -ms-linear-gradient(left,#FBB935,#ff6633);
+    background: -webkit-linear-gradient(left,#FBB935,#ff6633);
+    background: -o-linear-gradient(left,#FBB935,#ff6633);
+    background: -moz-linear-gradient(left,#FBB935,#ff6633);
+}
+.login-prepare-btn-fff{
+    background: none!important;
+    color: #ff6633 !important;
+    border: .1rem solid #ff6633;
+}
+.wuyou-logo {
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer-ICP{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center
+}
+.register-btn{
+    height: 2rem;
+    line-height: 2rem;
+    border: .1rem solid #ff6633;
+    color: #ff6633;
+    background: none;
+    border-radius: .3rem;
+    position: absolute;
+    right: 1rem;
+    margin-top: .3rem;
+}
+.register-desp{
+    display: flex;
+    padding: .5rem;
+}
+.login-col{
+    display: flex;
+    background-color: #fff;
+    border-bottom: .1rem solid #f6f6f8;
+    padding: .2rem 0;
+}
+.login-col input{
+    padding: .8rem 1rem;
+    border: none;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.login-col img{
+    flex: 0 0 10%;
+    margin: auto 1rem;
+}
+.forget-pwd-btn{
+    float: right;
+    border: .1rem solid #ff6633;
+    color: #ff6633;
+    background: none;
+    border-radius: .3rem;
+}
+.forget-pwd-div{
+    margin: 1.5rem 0;
+}
+.forget-pwd-input{
+    flex: 0 0 70%;
+    margin-left: 1rem;
+}
+/*登录注册相关css样式 结束*/

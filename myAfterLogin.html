@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--针对移动端的viewport通用设置-->
+    <meta name="viewport"
+          content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="static/css/common.css"/>
+
+    <title>我的</title>
+    <style TYPE="text/css">
+        .my {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .my-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background-color: #f6f6f8;
+
+        }
+
+        .my-content-wrapper {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .my-user-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .my-order-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            margin-bottom: 1rem;
+        }
+        .my-icon-2rem{
+            width:2rem;
+            height: 2rem;
+        }
+        .my-header-img {
+            flex: 0 0 30%;
+            height: 5rem;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+
+        .my-header-span {
+            margin: auto 2rem;
+            font-size: 1.6rem;
+        }
+
+        .my-icon-1rem {
+            width: 1rem;
+            height: 1rem;
+        }
+        .my-content-wrapper .multiply-select, .my-order-wrapper .multiply-select{
+            padding: 1rem;
+            margin: 0;
+            background-color: #fff;
+
+        }
+    </style>
+</head>
+<body class="my">
+<header>
+    <a style="text-decoration:none" href="index.html">
+        <img class="header-img-r" src="static/icon/index/设置.svg" alt=""/>
+    </a>
+    <span class="header-content">我的</span>
+</header>
+<div class="my-body">
+    <div class="my-user-wrapper">
+        <div>
+            <img class="my-header-img" src="static/icon/my/用户.svg" alt=""/>
+        </div>
+        <div>
+            <p class="my-header-span">188****4561</p>
+
+            <p class="my-header-span">余额 :  ¥0.0</p>
+        </div>
+    </div>
+    <div class="my-order-wrapper">
+        <div class="multiply-select">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的保单</span>
+                </div>
+            </div>
+            <a style="text-decoration:none;color: #555;" href="orderList.html">
+                <span>查看全部保单</span>
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <nav class="index-nav">
+            <div class="index-parent">
+                <span class="index-child-20" id="nav01">
+                    <img class="nav-img" src="static/icon/my/保障中.svg" alt=""/>
+                    <span class="nav-span">保障中</span>
+                </span>
+                <span class="index-child-20" id="nav02">
+                    <img class="nav-img" src="static/icon/my/待支付.svg" alt=""/>
+                    <span class="nav-span">待支付</span>
+                </span>
+                <span class="index-child-20" id="nav03">
+                    <img class="nav-img" src="static/icon/my/待审核.svg" alt=""/>
+                    <span class="nav-span">待审核</span>
+                </span>
+                <span class="index-child-20" id="nav04">
+                    <img class="nav-img" src="static/icon/my/待出单.svg" alt=""/>
+                    <span class="nav-span">待出单</span>
+                </span>
+                <span class="index-child-20" id="nav05">
+                    <img class="nav-img" src="static/icon/my/待开票.svg" alt=""/>
+                    <span class="nav-span">待开票</span>
+                </span>
+            </div>
+        </nav>
+
+    </div>
+    <div class="my-content-wrapper">
+        <div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/我的人员.svg" alt="">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的人员</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="myPeopleList.html">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/组织.svg" alt="">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的组织</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="myOrgList.html">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/开票申请.svg" alt="">
+            <div class="multiply-select-body " style="display: inline-block">
+                <div>
+                    <span>我的开票资料</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="manageNoteData.html">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/收件地址.svg" alt="">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的收件地址</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="manageAddress.html">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/电子卡卷.svg" alt="">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的卡劵</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="myCard.html">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <!--<div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/黑名单.svg" alt="">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的共享名单</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>
+        <div class="multiply-select">
+            <img class="buyMonthly-icon my-icon-2rem" src="static/icon/my/子帐号.svg" alt="">
+            <div class="multiply-select-body" style="display: inline-block">
+                <div>
+                    <span>我的帐号</span>
+                </div>
+            </div>
+            <a style="text-decoration:none" href="">
+                <img class="buyMonthly-icon my-icon-1rem" src="static/icon/buyMonthly/向右.svg" alt="">
+            </a>
+        </div>-->
+    </div>
+
+</div>
+<footer>
+    <span class="footer-child">
+        <a href="index.html">
+            <img class="footer-img" src="static/icon/index/homepage.svg" alt=""/>
+            <span class="footer-span">首页</span>
+        </a>
+    </span>
+    <span class="footer-child">
+        <a href="">
+            <img class="footer-img" src="static/icon/index/customerservice.svg" alt=""/>
+            <span class="footer-span">客服</span>
+        </a>
+    </span>
+    <span class="footer-child">
+        <a href="myAfterLogin.html">
+            <img class="footer-img" src="static/icon/index/mine_fill.svg" alt=""/>
+            <span class="footer-span footer-span-active">我的</span>
+        </a>
+    </span>
+</footer>
+</body>
+</html>
