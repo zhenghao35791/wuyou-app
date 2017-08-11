@@ -7,7 +7,11 @@
           content="width=device-width,,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>编辑组织信息</title>
     <link rel="stylesheet" href="static/css/common.css"/>
-    <style TYPE="text/css"></style>
+    <style TYPE="text/css">
+        .getOrg-upload{
+            flex: 0 0 45%;
+        }
+    </style>
 </head>
 <body class="add">
 <header>
@@ -39,8 +43,13 @@
             <input type="text" size="" maxlength="8" value="0512-12345678"/>
         </div>
         <div class="add-col">
-            <label>营业执照</label>
-            <input class="getOrg-upload" type="file" accept="image/*;capture=camera" >
+            <label style="margin-right: 35%">营业执照</label>
+<!--
+            <input class="file" type="file" accept="image/*;capture=camera">
+-->
+            <a href="javascript:;" class="a-upload">
+                <input type="file" name="" id="">
+            </a>
         </div>
     </div>
 </div>

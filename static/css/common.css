@@ -191,6 +191,7 @@ select {
     flex: 1;
     padding-top: .3rem;
     background-color: #f6f6f8;
+    font-size: 1.2rem;
 }
 
 .add-select-body {
@@ -208,6 +209,7 @@ select {
     border: none;
     text-align: right;
     font-size: 1.2rem;
+    color:#555;
 }
 
 .add-col {
@@ -568,3 +570,20 @@ select {
     margin-left: 1rem;
 }
 /*登录注册相关css样式 结束*/
+/*input file文件选择框样式修改 开始*/
+.a-upload {
+    overflow: hidden;
+    display: inline-block;
+}
+
+/*.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}*/
+
+/*input file文件选择框样式修改 结束*/
