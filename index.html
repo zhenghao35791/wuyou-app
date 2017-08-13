@@ -49,11 +49,31 @@
             flex-direction: column;
         }
 
-        .index-content {
-            flex: 1;
-            background-image: url(static/images/1.jpg);
-            background-size: cover;
+        @media screen and (max-device-width: 370px)  {
+            .index-ads li {
+                padding: 0!important;
+            }
+            .index-ads h3 {
+                font-size: 1.3rem !important;
+            }
+            .index-content {
+                flex: 1;
+                background-image: url(static/images/banner6p.png);
+                background-size: cover;
+            }
         }
+        @media screen and (min-device-width: 371px)  {
+            .index-content {
+                flex: 1;
+                background-image: url(static/images/banner6p.png);
+                background-size: cover;
+            }
+        }
+        /*.index-content {
+            flex: 1;
+            background-image: url(static/images/banner750.png);
+            background-size: cover;
+        }*/
 
 
         .index-ads {
