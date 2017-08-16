@@ -587,3 +587,31 @@ select {
 }*/
 
 /*input file文件选择框样式修改 结束*/
+
+
+/*根据设备屏幕宽度改变字号  开始*/
+/*  <= iphone5 */
+@media screen and (max-device-width: 370px)  {
+    html{
+        font-size: 8px !important;
+    }
+    .index-ads li {
+        padding: 0!important;
+    }
+    .index-ads h3 {
+        font-size: 1.3rem !important;
+    }
+}
+/* >iphone6 <iphone6plus*/
+@media screen and (min-device-width: 371px) and (max-device-width: 420px){
+    html{
+        font-size: 10px;
+    }
+}
+/* >iphone6plus*/
+@media screen and (min-device-width: 420px){
+    html{
+        font-size: 14px !important;
+    }
+}
+/*根据设备屏幕宽度改变字号  结束*/
